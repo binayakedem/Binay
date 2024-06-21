@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: #ECF0F1; /* Light Gray */
+  color: #2C3E50; /* Dark Slate */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #28A745; /* Leaf Green */
+}
+a {
+  color: #2A9DF4; /* Sky Blue */
+}
+a:hover {
+  color: #F39C12; /* Warm Orange */
+}
