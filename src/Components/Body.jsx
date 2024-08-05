@@ -3,7 +3,7 @@ import videoSrc from '../assets/vid1.mp4'
 const Body = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = `../../unit 1.pdf`;
+    link.href = `../../Binaya Limbu.pdf`;
     link.download = 'Binaya Limbu CV.pdf';
     document.body.appendChild(link);
     link.click();
