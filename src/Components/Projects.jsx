@@ -5,6 +5,7 @@ import vivo from '../assets/vivo.png'
 import trail from '../assets/trail.png'
 import subhfront from '../assets/subhfront.png'
 import subhdashboard from '../assets/subhdash.png'
+import hashcnet from '../assets/hashcnet.png'
 const Projects = () => {
     const data=[
         {
@@ -17,14 +18,15 @@ const Projects = () => {
            "preview":"https://prabidhi-virid.vercel.app/"
         },
         {
-            "id": 2,
-            "name":"Hariyali Abhiyan",
-            "languages":"React.js, Tailwind CSS",
-            "image": hariyali,
-             "description": "System display the information about the Hariyali Abhiyan.",
-             "sourcecode":"https://github.com/binayakedem/hariyana",
-             "preview":"https://hariyana.vercel.app/"
-          },
+          "id": 2,
+          "name":"Hash Cnet Pvt.Ltd.",
+          "languages":"React.js, Tailwind CSS",
+          "image": hashcnet,
+           "description": "System display the information about the hash cnet pvt. ltd.",
+           "sourcecode":"https://github.com/binayakedem/",
+           "preview":"https://hashcnet.vercel.app/"
+        },
+        
           {
             "id": 3,
             "name":"Vivo Education Pvt.Ltd",
@@ -63,6 +65,15 @@ const Projects = () => {
           },
           {
             "id": 7,
+            "name":"Hariyali Abhiyan",
+            "languages":"React.js, Tailwind CSS",
+            "image": hariyali,
+             "description": "System display the information about the Hariyali Abhiyan.",
+             "sourcecode":"https://github.com/binayakedem/hariyana",
+             "preview":"https://hariyana.vercel.app/"
+          },
+          {
+            "id": 8,
             "name":"Pre-order system",
             "languages":"React.js, CSS, Bootstrap,firebase ",
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp6eUe2B-rM_EFa4piJFA0hYXuQK2M_WeoSg&s",
@@ -71,7 +82,7 @@ const Projects = () => {
              "preview":"null"
           },
           {
-            "id": 8,
+            "id": 9,
             "name":"World news",
             "languages":"React.js, CSS, Firebase,",
             "image": "https://thumbs.dreamstime.com/b/world-news-text-silver-d-uppercase-letters-placed-next-to-globe-showing-most-north-south-america-background-symbols-99681085.jpg",
@@ -80,7 +91,7 @@ const Projects = () => {
              "preview":"null"
           },
           {
-            "id": 9,
+            "id": 10,
             "name":"Sustainable energy production prediction",
             "languages":"React.js, bootstrap, css, python ",
             "image": "https://www.eia.gov/todayinenergy/images/2021.02.08/main.svg",
@@ -89,7 +100,7 @@ const Projects = () => {
              "preview":"null"
           },
           {
-            "id": 10,
+            "id": 11,
             "name":"To Do Project",
             "languages":"python , CSS, HTML",
             "image": "https://www.smartsheet.com/sites/default/files/2022-09/IC-Project-Task-Checklist-Template.png",
@@ -98,7 +109,7 @@ const Projects = () => {
              "preview":"null"
           },
           {
-            "id": 11,
+            "id": 12,
             "name":"Restaurant Management system",
             "languages":"python django with rest framework, react.js ",
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXSfeT-5B6ENiwvlHXuG-DXLyK4raUCtCNsqYetGMqMCyvdQxlIEAh-aSwa_W69hzjdq0&usqp=CAU",
@@ -107,7 +118,7 @@ const Projects = () => {
              "preview":"null"
           },
           {
-            "id": 12,
+            "id": 13,
             "name":"Basics of python",
             "languages":"python ",
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4L3bn1GkJ2Nm6ikVwF2dmqJZCmL8rAjVbyCTdeWKelvCok51IZQ3-l-zi6XlXvLmIXkU&usqp=CAU",
@@ -115,6 +126,7 @@ const Projects = () => {
              "sourcecode":"https://github.com/binayakedem/python-basic",
              "preview":"null"
           },
+
       ]
   return (
     <div className='bg-dark-500 text-light-gray lg:px-32 md:px-20 px-2'>
