@@ -6,6 +6,7 @@ import trail from '../assets/trail.png'
 import subhfront from '../assets/subhfront.png'
 import subhdashboard from '../assets/subhdash.png'
 import hashcnet from '../assets/hashnet.jpg'
+import quote from '../assets/quote.jpg'
 const Projects = () => {
     const data=[
         {
@@ -76,7 +77,7 @@ const Projects = () => {
             "id": 8,
             "name":"Quote Generator app",
             "languages":"Javascript , HTML and CSS",
-            "image": hariyali,
+            "image": quote,
              "description": "System display the quote generator app.",
              "sourcecode":"https://github.com/binayakedem/quote",
              "preview":"https://quote-xi.vercel.app/"
