@@ -19,7 +19,7 @@ const Navbar = () => {
                 <NavLink  to='/gallery'className={({ isActive }) => `text-light-gray hover:text-warm-orange duration-300 ease-in-out ${  isActive ? 'text-warm-orange font-bold' : ''    }` }>Gallery</NavLink>
             </div>
             <div className='bg-[#F39C12] lg:py-2 rounded lg:px-6 md:px-3 md:py-1'>
-                <NavLink className='text-white hover:text-white duration-300 ease-in-out' to='/about'>Contact Me</NavLink>
+                <NavLink className='text-white hover:text-white duration-300 ease-in-out' to='/contact'>Contact Me</NavLink>
             </div>
 
         </div>
@@ -43,7 +43,7 @@ const Navbar = () => {
                 <NavLink  to='/gallery'className={({ isActive }) => `text-light-gray hover:text-warm-orange duration-300 ease-in-out ${  isActive ? 'text-warm-orange font-bold' : ''    }` }>Gallery</NavLink>
             </div>
             <div className={`rounded mt-4 ${toggle?"":"hidden"}`}>
-                <NavLink className='w-1/2 bg-[#F39C12] px-5 py-1 rounded  text-light-gray hover:text-white duration-300 ease-in-out' to='/about'>Contact Me</NavLink>
+                <NavLink className='w-1/2 bg-[#F39C12] px-5 py-1 rounded  text-light-gray hover:text-white duration-300 ease-in-out' to='/contact'>Contact Me</NavLink>
             </div>
 
         </div>

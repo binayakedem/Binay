@@ -10,6 +10,7 @@ import About from '../Pages/About'
 import Footer from '../Components/Footer'
 import Blog from '../Pages/Blog'
 import Gallery from '../Pages/Gallery'
+import Contact from '../Pages/Contact'
 const MyRoutings= () => {
   return (
    <>
@@ -25,6 +26,7 @@ const MyRoutings= () => {
     <Route path='/blogs/1' element={<Blog />}/>
     <Route path='/blogs/:id' element={<Blog />}/>
     <Route path='/gallery' element={<Gallery />}/>
+    <Route path='/contact' element={<Contact />}/>
    </Routes>
    <Footer/>
    </BrowserRouter>

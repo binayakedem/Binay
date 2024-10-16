@@ -39,20 +39,6 @@ const About = () => {
             </div>
 
         </div>
-        <div className='bg-yellow-50 rounded shadow md:p-10 p-4' data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-            <h1 className='text-black font-bold text-2xl text-center mb-10'>Contact Me</h1>
-            <form action="" method="post">
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mb-6'>
-                <input type="text" placeholder='Enter Your name' className='border p-2 rounded text-black w-full' />
-                <input type="email" placeholder='Enter Your Email' className='border p-2 rounded text-black w-full' />
-                <input type="text" placeholder='Enter Your Subject' className='border p-2 rounded text-black w-full' />
-                </div>
-                <input type="textarea" placeholder='Enter Your Message Here' className='border px-2 py-20 rounded text-black w-full' />
-                <button className='text-white bg-[#F39C12] font-semibold my-6 px-8 py-3 rounded hover:text-white duration-300 ease-in-out' type='submit'>Contact Me</button>
-            </form>
-        </div>
     </div>
     </>
   )
