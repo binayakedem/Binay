@@ -41,7 +41,7 @@ useEffect(() => {
         <h1 className="text-white text-4xl md:text-6xl font-bold"> Developer</h1>
         <button
         onClick={handleDownload}
-        className="px-4 py-2 bg-[#0849A8] lg:mt-28 mt-16 text-white rounded hover:bg-[#0849FF] transition duration-300"
+        className="px-4 py-2 bg-[#F39C12] lg:mt-28 mt-16 text-white rounded hover:bg-[#0849FF] transition duration-300"
       >
         Download CV
       </button>

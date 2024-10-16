@@ -33,7 +33,9 @@ const Experiences = () => {
       ]
   return (
     <>
-    <div className='h-60 overflow-hidden w-full'>
+    <div className='h-60 overflow-hidden w-full' data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
         <img className='h-60 w-full object-cover' src="https://st.depositphotos.com/1350793/2816/i/450/depositphotos_28167733-stock-photo-social-networking-concept.jpg" alt="banner" />
     </div>
     <div className='bg-gray-50 text-light-gray lg:px-32 md:px-20 px-2'>
@@ -41,7 +43,8 @@ const Experiences = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-2'>
                 {
                     data.map((d)=>(
-                        <div key={d.id}>
+                        <div key={d.id} data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
                             <div className=' rounded-lg shadow-black shadow-lg hover:animate-bounce ease-in-out cursor-pointer'>
                                 <img className='rounded-lg object-cover h-40 w-full' src={d.image} alt="logo" />
                             </div>

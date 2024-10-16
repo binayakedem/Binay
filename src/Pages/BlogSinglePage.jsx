@@ -55,7 +55,7 @@ const BlogSinglePage = () => {
   return (
     <>    {
         data.map((d)=>(
-        <div key={d.id} className='lg:w-[30vw] border border-black p-1 my-2'>
+        <div key={d.id} className='lg:w-[30vw] border border-black p-1 my-2' data-aos="zoom-out-up">
                <div className='border text-black p-1 shadow-sm shadow-black'>
                <h1 className='text-black font-bold text-lg'>{d.heading.split(' ').slice(0, 4).join(' ')}...</h1>
                <p className='text-gray-700'>{d.main_paragraph.split(' ').slice(0, 4).join(' ')}...</p>

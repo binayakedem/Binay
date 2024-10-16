@@ -53,7 +53,7 @@ const Skills = () => {
            "description": "The standard markup language for creating web pages."
         },
         {
-            "id": 9,
+            "id": 10,
             "name": "CSS3",
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlJ6A-fY-YxIxZTSqLhiVKy_AI9OdRRyOJjjGq9KPxJ5uTCS3Oqxnm1mO183NEGCIlZns&usqp=CAU"
             ,
@@ -66,7 +66,9 @@ const Skills = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-2'>
                 {
                     data.map((d)=>(
-                        <div key={d.id}>
+                        <div key={d.id} data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                             <div className=' rounded-lg shadow-black shadow-lg hover:animate-bounce ease-in-out cursor-pointer'>
                                 <img className='rounded-lg object-cover h-40 w-full' src={d.image} alt="" />
                             </div>

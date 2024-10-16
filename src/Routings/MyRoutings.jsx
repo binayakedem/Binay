@@ -9,7 +9,7 @@ import Experiences from '../Pages/Experiences'
 import About from '../Pages/About'
 import Footer from '../Components/Footer'
 import Blog from '../Pages/Blog'
-import Index from '../Pages/Index'
+import Gallery from '../Pages/Gallery'
 const MyRoutings= () => {
   return (
    <>
@@ -24,7 +24,7 @@ const MyRoutings= () => {
     <Route path='/about' element={<About/>}/>
     <Route path='/blogs/1' element={<Blog />}/>
     <Route path='/blogs/:id' element={<Blog />}/>
-    <Route path='/index' element={<Index />}/>
+    <Route path='/gallery' element={<Gallery />}/>
    </Routes>
    <Footer/>
    </BrowserRouter>

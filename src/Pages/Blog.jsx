@@ -63,10 +63,12 @@ const Blog = () => {
   };
   return (
     <>
-    <div className='overflow-hidden h-80  w-full'>
+    <div className='overflow-hidden h-80  w-full' data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
         <img className='h-80 w-full object-cover' src="https://mijablur.com/wp-content/uploads/20211222_192434_0000.jpg" alt="blogginbanner" />
     </div>
-    <div className='bg-dark-500 text-light-gray lg:px-32 md:px-20 px-2'>
+    <div className='bg-dark-500 text-light-gray lg:px-32 md:px-20 px-2' data-aos="zoom-out-up">
         <div className=' lg:flex-row gap-3 flex flex-col  lg:h-screen lg:overflow-hidden'>
             <div className='lg:w-[70vw] p-3 shadow-black shadow-md  flex-grow overflow-y-scroll' ref={rightRef}>
                 <div>

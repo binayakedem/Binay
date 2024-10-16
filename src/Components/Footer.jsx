@@ -44,9 +44,17 @@ const Footer = () => {
                 <FaPhone color='green'/>
                 <p>+977-9843555471</p>
             </div>
+            <div className='flex flex-row gap-2 items-center'>
+                <FaPhone color='green'/>
+                <p>+977-9803588079</p>
+            </div>
             <div className='flex flex-row gap-2 items-center my-1 '>
             <MdOutlineAttachEmail color='red'/>
                 <p>iambinayalimbu@gmail.com</p>
+            </div>
+            <div className='flex flex-row gap-2 items-center my-1 '>
+            <MdOutlineAttachEmail color='red'/>
+                <p>binayalimbu300@gmail.com</p>
             </div>
           </div>
 

@@ -144,7 +144,7 @@ const Projects = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-2'>
                 {
                     data.map((d)=>(
-                        <div key={d.id} className='flex flex-col rounded-md'>
+                        <div data-aos="zoom-in-up" data-aos-duration="1500" key={d.id} className='flex flex-col rounded-md'>
                             <div className='shadow-black shadow-lg rounded-md'>
                                 <div className='relative '>
                                     <img className='h-40 w-full object-cover' src={d.image} alt={d.name} />
