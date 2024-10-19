@@ -29,6 +29,10 @@ const Experiences = () => {
         {
             "id": 7,
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlJ6A-fY-YxIxZTSqLhiVKy_AI9OdRRyOJjjGq9KPxJ5uTCS3Oqxnm1mO183NEGCIlZns&usqp=CAU"
+          },
+        {
+            "id": 8,
+            "image": "https://contentstatic.techgig.com/thumb/msid-101591195,width-800,resizemode-4/Why-is-python-one-of-the-best-programming-languages.jpg?9070"
           }
       ]
   return (
@@ -45,8 +49,8 @@ const Experiences = () => {
                     data.map((d)=>(
                         <div key={d.id} data-aos="fade-up"
                         data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
-                            <div className=' rounded-lg shadow-black shadow-lg hover:animate-bounce ease-in-out cursor-pointer'>
-                                <img className='rounded-lg object-cover h-40 w-full' src={d.image} alt="logo" />
+                            <div className=' border rounded-md ease-in-out cursor-pointer h-40 overflow-hidden'>
+                                <img className='rounded-lg object-cover h-full w-full hover:scale-110 duration-500 ease-in-out' src={d.image} alt="logo" />
                             </div>
                         </div>
                     ))

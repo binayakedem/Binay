@@ -1,77 +1,55 @@
 import React from 'react'
-
+import backend from '../assets/backend.png'
+import frontend from '../assets/frontend.png'
+import database from '../assets/database.png'
+import version from '../assets/version.png'
+import responsive from '../assets/responsive.png'
 const Skills = () => {
-    const data=[
-        {
-          "id": 1,
-          "name": "Java with Spring Boot",
-          "image": "https://www.devopsschool.com/blog/wp-content/uploads/2023/12/image-168.png",
-           "description": "An open-source Java-based framework used to create microservices."
-        },
-        {
-          "id": 2,
-          "name": "Python with Django",
-          "image": "https://miro.medium.com/v2/resize:fit:1400/1*ws0l7_iuNWU2ozGQdZuCJg.jpeg",
-           "description": "A high-level Python web framework that promotes rapid development and clean, pragmatic design."
-        },
-        {
-          "id": 4,
-          "name": "React js",
-          "image": "https://miro.medium.com/v2/resize:fit:960/0*acB7EdIeWDFW0caX.jpg"
-          ,
-          "description": "A JavaScript library for building user interfaces."
-        },
-        {
-          "id": 5,
-          "name": "Node.js",
-          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReof1h0J36RGurfOZFfF42rtDMDX9t0d9TbjyFcS0smTO5alQAh24VMayJrNa7UeK4OFg&usqp=CAU",
-          "description": "A JavaScript runtime built on Chrome's V8 engine."
-        },
-        {
-          "id": 6,
-          "name": "MongoDB",
-          "image": "https://www.openlogic.com/sites/default/files/image/2021-06/image-blog-openlogic-what-is-mongodb.png",
-          "description": "A NoSQL database for high volume data storage."
-        
-        },
-        {
-          "id": 7,
-          "name": "Express.js",
-          "image": "https://miro.medium.com/v2/resize:fit:1400/1*i2fRBk3GsYLeUk_Rh7AzHw.png",
-          "description": "A minimal and flexible Node.js web application framework."
-        },
-        {
-          "id": 8,
-          "name": "Git",
-          "image": "https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png"
-        },
-        {
-          "id": 9,
-          "name": "HTML5",
-          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUgdDWCZtoif5bdJmw-DIoDHdtfNcVc0cQj5AUqs8hwLyH4J4Dem1htd53ieh4rAY5Dy0&usqp=CAU"
-          ,
-           "description": "The standard markup language for creating web pages."
-        },
-        {
-            "id": 10,
-            "name": "CSS3",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlJ6A-fY-YxIxZTSqLhiVKy_AI9OdRRyOJjjGq9KPxJ5uTCS3Oqxnm1mO183NEGCIlZns&usqp=CAU"
-            ,
-            "description": "A style sheet language used for describing the look of a document."
-          }
-      ]
+  const data = [
+    {
+      id: 1,
+      title: "Frontend",
+      description: "I am expert in HTML, CSS, JavaScript, React, Bootstrap, and Tailwind.",
+      logo: frontend
+    },
+    {
+      id: 2,
+      title: "Backend",
+      description: "I am proficient in Node.js, Express, Python, Java, Spring Boot, and Django.",
+      logo: backend
+    },
+    {
+      id: 3,
+      title: "Database",
+      description: "I have experience with MySQL, MongoDB, PostgreSQL, and SQLite.",
+      logo: database
+    },
+    {
+      id: 4,
+      title: "Version Control",
+      description: "I use Git and GitHub for version control.",
+      logo: version
+    },
+    {
+      id: 5,
+      title: "Responsive Design",
+      description: "I am familiar with Figma and Canva for design and responsive layouts.",
+      logo: responsive
+    }
+  ];
+  
   return (
     <div className='bg-gray-200 text-light-gray lg:px-32 md:px-20 px-2'>
-        <h1 className='font-bold  text-black text-2xl text-center py-10'>Skills in </h1>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-2'>
+        <h1 className='font-bold  text-black text-2xl text-center py-10'>I specialized in range of Skills </h1>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-2'>
                 {
                     data.map((d)=>(
-                        <div key={d.id} data-aos="flip-left"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="2000">
-                            <div className=' rounded-lg  hover:animate-bounce ease-in-out cursor-pointer'>
-                                <img className='rounded-lg object-cover h-40 w-full' src={d.image} alt="" />
+                        <div key={d.id} data-aos="flip-left"data-aos-easing="ease-out-cubic" data-aos-duration="2000" className='border border-gray-500 p-4 shadow-black flex flex-col justify-center items-center cursor-pointer hover:bg-yellow-100 hover:duration-1000 hover:text-black rounded-2xl  shadow'>
+                            <div className='overflow-hidden h-20'>
+                              <img className='h-full w-full object-cover' src={d.logo} alt="logo" />
                             </div>
+                            <h1 className='font-semibold text-lg text-black'>{d.title}</h1>
+                            <p className='text-gray-900'>{d.description}</p>
 
                         </div>
                     ))
