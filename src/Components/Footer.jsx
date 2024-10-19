@@ -3,6 +3,14 @@ import { NavLink } from 'react-router-dom'
 import { FaLinkedin,FaFacebook,FaInstagram ,FaGithubSquare ,FaPhone} from "react-icons/fa";
 import { MdOutlineAttachEmail } from "react-icons/md";
 const Footer = () => {
+    const email1 = 'binayalimbu300@gmail.com';
+    const email2= 'iambinayalimbu@gmail.com';
+    const handleEmailClick1 = () => {
+      window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email1}`);
+    };
+    const handleEmailClick2 = () => {
+      window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email2}`);
+    };
   return (
     <div className='text-light-gray bg-dark-slate mt-6'>
        <div className=' lg:px-32 md:px-20 px-2'>
@@ -49,12 +57,12 @@ const Footer = () => {
                 <p>+977-9803588079</p>
             </div>
             <div className='flex flex-row gap-2 items-center my-1 '>
-            <MdOutlineAttachEmail color='red'/>
-                <p>iambinayalimbu@gmail.com</p>
+            <MdOutlineAttachEmail color='red' onClick={handleEmailClick2}/>
+                <p onClick={handleEmailClick2} className='cursor-pointer'>{email2}</p>
             </div>
             <div className='flex flex-row gap-2 items-center my-1 '>
-            <MdOutlineAttachEmail color='red'/>
-                <p>binayalimbu300@gmail.com</p>
+            <MdOutlineAttachEmail color='red' onClick={handleEmailClick1}/>
+                <p onClick={handleEmailClick1} className='cursor-pointer'>{email1}</p>
             </div>
           </div>
 

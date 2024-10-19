@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import banner from '../assets/limbu.jpg';
-
+import { FaLinkedin,FaFacebook,FaInstagram ,FaGithubSquare ,FaPhone} from "react-icons/fa";
+import { MdOutlineAttachEmail } from "react-icons/md";
 const Contact = () => {
     const [user, setUser] = useState({
         name: '', email: '', subject: '', message: ''
@@ -40,7 +41,14 @@ const Contact = () => {
             alert("Something went wrong!!");
         }
     };
-
+    const email1 = 'binayalimbu300@gmail.com';
+    const email2= 'iambinayalimbu@gmail.com';
+    const handleEmailClick1 = () => {
+      window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email1}`);
+    };
+    const handleEmailClick2 = () => {
+      window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email2}`);
+    };
     return (
         <>
             <div className='h-96 w-full' data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
@@ -66,6 +74,44 @@ const Contact = () => {
                         </div>
                     )}
                 </div>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-12 h-96 pt-4'>
+                <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d472.8095015057145!2d85.34084043398627!3d27.70040259506336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2snp!4v1729261861189!5m2!1sen!2snp"
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
+      <div className='text-black flex flex-col gap-2    '>
+        <h1 className='font-bold text-lg text-yellow-600'>Contacts</h1>
+        <div className='flex flex-row gap-2 items-center'>
+                <FaPhone color='green'/>
+                <p>+977-9843555471</p>
+            </div>
+            <div className='flex flex-row gap-2 items-center'>
+                <FaPhone color='green'/>
+                <p>+977-9803588079</p>
+            </div>
+        <div className='flex flex-row gap-2 items-center my-1 '>
+            <MdOutlineAttachEmail color='red' onClick={handleEmailClick2}/>
+                <p onClick={handleEmailClick2} className='cursor-pointer'>{email2}</p>
+            </div>
+            <div className='flex flex-row gap-2 items-center my-1 '>
+            <MdOutlineAttachEmail color='red' onClick={handleEmailClick1}/>
+                <p onClick={handleEmailClick1} className='cursor-pointer'>{email1}</p>
+            </div>
+            <div className='flex flex-row gap-4 items-center '>
+                <p>Find me: </p>
+                 <a href="https://www.facebook.com/binayakdm" target='_blank'> <FaFacebook color='blue'/></a>
+                 <a href="https://github.com/binayakedem/" target='_blank'><FaGithubSquare color='black'/></a>
+                 <a href="https://www.instagram.com/binayalimbuz/" target='_blank'><FaInstagram color='red'/></a>
+                <a href="https://www.linkedin.com/in/binayalimbu/" target='_blank'> <FaLinkedin color='blue'/></a>
+               
+            </div>
+      </div>
+                              </div>
             </div>
         </>
     );
