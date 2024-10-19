@@ -64,7 +64,7 @@ const Contact = () => {
                             <input type="text" name="subject" placeholder='Enter Your Subject' className='border p-2 rounded text-black w-full' value={user.subject} required onChange={data} />
                         </div>
                         <textarea name="message" placeholder='Enter Your Message Here' className='border px-2 py-20 rounded text-black w-full' value={user.message} required onChange={data} />
-                        <button className='text-white bg-[#F39C12] font-semibold my-6 px-8 py-3 rounded hover:text-white duration-300 ease-in-out' onClick={handleSubmit}>Contact Me</button>
+                        <button className='text-white bg-[#F39C12] font-semibold my-6 px-8 py-3 rounded hover:text-white duration-300 ease-in-out' onClick={handleSubmit}>Send</button>
                     </form>
 
                     {/* Chatbot reply after message submission */}

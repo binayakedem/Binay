@@ -19,7 +19,41 @@ import i7 from '../assets/i7.png'
 import i8 from '../assets/i8.png'
 import i9 from '../assets/i9.png'
 
+import p1 from '../assets/p1.png'
+import p2 from '../assets/p2.png'
+import p3 from '../assets/p3.png'
+import p4 from '../assets/p4.png'
+import p5 from '../assets/p5.png'
 
+import s1 from '../assets/s1.png'
+import s2 from '../assets/s2.png'
+import s3 from '../assets/s3.png'
+import s4 from '../assets/s4.png'
+import s5 from '../assets/s5.png'
+import s6 from '../assets/s6.png'
+import s7 from '../assets/s7.png'
+import s8 from '../assets/s8.png'
+
+import b1 from '../assets/b1.jpg'
+import b2 from '../assets/b2.jpg'
+import b3 from '../assets/b3.jpg'
+import b4 from '../assets/b4.jpg'
+import b5 from '../assets/b5.jpg'
+import b6 from '../assets/b6.jpg'
+import b7 from '../assets/b7.jpg'
+import b8 from '../assets/b8.jpg'
+import b9 from '../assets/b9.jpg'
+
+import c1 from '../assets/c1.png'
+import c2 from '../assets/c2.png'
+import c3 from '../assets/c3.png'
+import c4 from '../assets/c4.png'
+import c5 from '../assets/c5.png'
+import c6 from '../assets/c6.png'
+import c7 from '../assets/c7.png'
+import c8 from '../assets/c8.png'
+import c9 from '../assets/c9.png'
+import  c10 from '../assets/c10.png'
 const Gallary = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [visibleImages, setVisibleImages] = useState(6); // State to manage visible images
@@ -44,6 +78,41 @@ const Gallary = () => {
     { id: 16, src: i7 },
     { id: 17, src: i8 },
     { id: 19, src: i9 },
+    { id: 20, src: p1 },
+    { id: 21, src: p2 },
+    { id: 22, src: p3 },
+    { id: 23, src: p4 },
+    { id: 24, src: p5 },
+
+    { id: 25, src: s1 },
+    { id: 26, src: s2 },
+    { id: 27, src: s3 },
+    { id: 28, src: s4 },
+    { id: 29, src: s5 },
+    { id: 30, src: s6 },
+    { id: 31, src: s7 },
+    { id: 32, src: s8 },
+
+    { id: 33, src: b1 },
+    { id: 34, src: b2 },
+    { id: 35, src: b3 },
+    { id: 36, src: b4 },
+    { id: 37, src: b5 },
+    { id: 38, src: b6 },
+    { id: 39, src: b7 },
+    { id: 40, src: b8 },
+    { id: 41, src: b9 },
+
+    { id: 42, src: c1 },
+    { id: 43, src: c2 },
+    { id: 44, src: c3 },
+    { id: 45, src: c4 },
+    { id: 46, src: c5 },
+    { id: 47, src: c6 },
+    { id: 48, src: c7 },
+    { id: 49, src: c8 },
+    { id: 50, src: c9 },
+    { id: 51, src: c10 }
   ];
 
   // Function to open full image view
@@ -69,8 +138,8 @@ const Gallary = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {images.slice(0, visibleImages).map((image) => (
               <div
-                key={image.id} // Use the unique id here
-                className="overflow-hidden h-[200px] w-full"
+                key={image.id} 
+                className="overflow-hidden h-[200px] w-full shadow-sm shadow-black "
                 data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000"
@@ -78,7 +147,7 @@ const Gallary = () => {
                 <img
                   src={image.src}
                   alt={`Gallery image ${image.id}`}
-                  className="w-full h-full object-cover cursor-pointer transition-transform duration-500 transform hover:scale-125"
+                  className="w-full h-full object-cover cursor-pointer transition-transform duration-500 transform hover:scale-125 "
                   onClick={() => openImage(image.src)}
                 />
               </div>

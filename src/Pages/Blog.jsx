@@ -1,6 +1,6 @@
 import React,{ useRef } from 'react';
-import BlogSinglePage from './BlogSinglePage'
 import { useParams } from 'react-router-dom';
+import MyBlog from './MyBlog';
 const Blog = () => {
     const data=[
         {
@@ -68,36 +68,7 @@ const Blog = () => {
      data-aos-duration="2000">
         <img className='h-80 w-full object-cover' src="https://mijablur.com/wp-content/uploads/20211222_192434_0000.jpg" alt="blogginbanner" />
     </div>
-    <div className='bg-dark-500 text-light-gray lg:px-32 md:px-20 px-2' data-aos="zoom-out-up">
-        <div className=' lg:flex-row gap-3 flex flex-col  lg:h-screen lg:overflow-hidden'>
-            <div className='lg:w-[70vw] p-3 shadow-black shadow-md  flex-grow overflow-y-scroll' ref={rightRef}>
-                <div>
-                    <h1 className='text-black font-extrabold font-sans text-3xl my-2'>{selectedItem.heading} </h1>
-                </div>
-                <div className='lg:h-[400px] w-full overflow-hidden'>
-                    <img className='h-auto w-full object-cover rounded-md' src={selectedItem.primary_image} alt="mainprofile" />
-                </div>
-                <div className='flex flex-row gap-2 text-black  mb-3 text-sm'>
-                    <p>By {selectedItem.author}</p>||<p></p><p>{selectedItem.update_time}</p>
-                </div>
-                <div className='text-gray-800 font-sans'>
-                    <p>{selectedItem.main_paragraph}</p>
-                </div>
-                <div className='grid col-span-1 lg:grid-cols-2 gap-4 my-3 font-sans'>
-                    <div className='text-gray-800'>
-                        <p>{selectedItem.second_paragraph}</p>
-                    </div>
-                    <div className='overflow-hidden'>
-                       <img className='w-full h-full object-cover rounded-md' src={selectedItem.second_image} alt="leftcontent" />
-                    </div>
-                </div>
-            </div>
-            <div className=' border-r border-gray-200 ' ref={leftRef} onScroll={handleScroll}>
-            <BlogSinglePage/>
-            </div>
-
-        </div>
-    </div>
+    <MyBlog/>
 
     </>
   )

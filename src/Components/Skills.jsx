@@ -69,7 +69,7 @@ const Skills = () => {
                         <div key={d.id} data-aos="flip-left"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="2000">
-                            <div className=' rounded-lg shadow-black shadow-lg hover:animate-bounce ease-in-out cursor-pointer'>
+                            <div className=' rounded-lg  hover:animate-bounce ease-in-out cursor-pointer'>
                                 <img className='rounded-lg object-cover h-40 w-full' src={d.image} alt="" />
                             </div>
 

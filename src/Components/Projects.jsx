@@ -141,11 +141,11 @@ const Projects = () => {
   return (
     <div className='bg-dark-500 text-light-gray lg:px-32 md:px-20 px-2'>
         <h1 className='font-bold  text-black text-2xl text-center py-10'>Projects </h1>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-2'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-2 pb-5'>
                 {
                     data.map((d)=>(
                         <div data-aos="zoom-in-up" data-aos-duration="1500" key={d.id} className='flex flex-col rounded-md'>
-                            <div className='shadow-black shadow-lg rounded-md'>
+                            <div className='shadow-black shadow-sm rounded-md'>
                                 <div className='relative '>
                                     <img className='h-40 w-full object-cover' src={d.image} alt={d.name} />
                                     <div className='absolute inset-0  text-white bg-black opacity-0 hover:opacity-95 hover:bg-opacity-95 p-2 duration-500 cursor-pointer'>
