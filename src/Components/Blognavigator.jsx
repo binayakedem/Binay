@@ -21,7 +21,7 @@ const Blognavigator = () => {
                 </div>
             </div>
             </div>
-            <div className='text-black' data-aos="zoom-in" data-aos-duration="1000">
+            <div className='text-black px-2' data-aos="zoom-in" data-aos-duration="1000">
                 <h1 className='text-xl font-semibold mb-2 text-[#F39C12] text-center md:text-start'>Welcome to My Blog!</h1>
                 <p>I am excited to share my journey with you through this platform. Here you'll find my observations and anecdotes from my travels as I discover new locations, advance technological advancements, and pick up priceless lessons. My intention is to capture these moments on camera and give you a peek of the amazing world we live in. Come along with me as I explore intriguing discoveries and impart the knowledge I've gained in the aim of enlightening and motivating others. Together, let's go off on this adventure!</p>
                 <NavLink to='/blog'>Learn More...</NavLink>
