@@ -40,7 +40,7 @@ const Skills = () => {
   
   return (
     <div className='bg-gray-200 text-light-gray lg:px-32 md:px-20 px-2'>
-        <h1 className='font-bold  text-black text-2xl text-center py-10'>I specialized in range of Skills </h1>
+        <h1 className='font-bold  text-black text-2xl text-center py-10 font-mont'>I specialized in range of Skills </h1>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-2'>
                 {
                     data.map((d)=>(
@@ -48,7 +48,7 @@ const Skills = () => {
                             <div className='overflow-hidden h-20'>
                               <img className='h-full w-full object-cover' src={d.logo} alt="logo" />
                             </div>
-                            <h1 className='font-semibold text-lg text-black'>{d.title}</h1>
+                            <h1 className='font-semibold text-lg text-black font-mont'>{d.title}</h1>
                             <p className='text-gray-900'>{d.description}</p>
 
                         </div>

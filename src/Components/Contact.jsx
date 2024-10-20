@@ -52,7 +52,7 @@ const Contact = () => {
     <div>
         <div className='bg-dark-50 text-white lg:px-32 md:px-20 px-2 pt-2'>
                 <div className='bg-blue-50 rounded shadow md:p-10 p-4' data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                    <h1 className='text-black font-bold text-2xl text-center mb-10'>Contact Me</h1>
+                    <h1 className='text-black font-bold text-2xl text-center mb-10 font-mont'>Love to hear message from you</h1>
                     <form method='POST'>
                         <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mb-6'>
                             <input type="text" name="name" placeholder='Enter Your name' className='border p-2 rounded text-black w-full' value={user.name} required onChange={data} />
@@ -60,7 +60,7 @@ const Contact = () => {
                             <input type="text" name="subject" placeholder='Enter Your Subject' className='border p-2 rounded text-black w-full' value={user.subject} required onChange={data} />
                         </div>
                         <textarea name="message" placeholder='Enter Your Message Here' className='border px-2 py-20 rounded text-black w-full' value={user.message} required onChange={data} />
-                        <button className='text-white bg-[#F39C12] font-semibold my-6 px-8 py-3 rounded hover:text-white duration-300 ease-in-out' onClick={handleSubmit}>Send</button>
+                        <button className='text-white bg-blue-600 font-semibold my-6 px-8 py-3 rounded hover:text-white duration-300 ease-in-out' onClick={handleSubmit}>Send Message</button>
                     </form>
 
                     {/* Chatbot reply after message submission */}
@@ -81,7 +81,7 @@ const Contact = () => {
         referrerPolicy="no-referrer-when-downgrade"
       />
       <div className='text-black flex flex-col gap-2    '>
-        <h1 className='font-bold text-lg text-yellow-600'>Contacts</h1>
+        <h1 className='font-bold text-lg text-yellow-600 font-mont'>Contacts</h1>
         <div className='flex flex-row gap-2 items-center'>
                 <FaPhone color='green'/>
                 <p>+977-9843555471</p>

@@ -16,7 +16,7 @@ const Footer = () => {
        <div className=' lg:px-32 md:px-20 px-2'>
         <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 '>
           <div className='flex flex-col p-3' >
-            <h1 className='text-warm-orange font-bold md:text-2xl text-lg my-1'>Quick Links</h1>
+            <h1 className='text-warm-orange font-bold md:text-2xl text-lg my-1 font-mont'>Quick Links</h1>
             <div className='flex flex-col lg:gap-1 '>
                 <NavLink  to="/"className={({ isActive }) => `text-light-gray hover:text-warm-orange duration-300 ease-in-out ${  isActive ? 'text-warm-orange font-bold' : ''    }` }>Home</NavLink>
                 <NavLink  to='/skills' className={({ isActive }) => `text-light-gray hover:text-warm-orange duration-300 ease-in-out ${  isActive ? 'text-warm-orange font-bold' : ''    }` }>Skills</NavLink>
@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
           </div>
           <div className='p-3'>
-            <h1 className='text-warm-orange font-bold md:md:text-2xl text-lg my-1'>Find Me</h1>
+            <h1 className='text-warm-orange font-bold md:md:text-2xl text-lg my-1 font-mont'>Find Me</h1>
             <div className='flex flex-col gap-2'>
               <div className='flex flex-row items-center gap-1'>
             <a href="https://www.facebook.com/binayakdm" target='_blank'> <FaFacebook size={24} color='white'/></a><a href="https://www.facebook.com/binayakdm" target='_blank' className='text-light-gray'> Facebook</a>
@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
           </div>
           <div className='p-3'>
-            <h1 className='text-warm-orange font-bold md:text-2xl text-lg my-1'>Contact Me</h1>
+            <h1 className='text-warm-orange font-bold md:text-2xl text-lg my-1 font-mont'>Contact Me</h1>
             <div className='flex flex-row gap-2 items-center'>
                 <FaPhone color='green'/>
                 <p>+977-9843555471</p>

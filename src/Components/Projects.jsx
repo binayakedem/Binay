@@ -146,7 +146,10 @@ const Projects = () => {
 
   return (
     <div className='bg-dark-500 text-light-gray lg:px-32 md:px-20 px-2'>
-      <h1 className='font-bold text-black text-2xl text-center py-10'>Some Live Projects</h1>
+<h1 className="bg-gradient-to-r from-red-700 via-yellow-600 to-blue-700 bg-clip-text text-transparent font-bold text-2xl text-center py-10 animate-gradient font-mont" style={{ backgroundSize: '200% 200%' }}>
+  Some Live Projects
+</h1>
+
       <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 p-2 pb-5'>
         {
           displayedProjects.map((d) => (
@@ -158,7 +161,7 @@ const Projects = () => {
                   </a>
                 </div>
                 <div>
-                  <h1 className='font-semibold text-lg text-black'>{d.name}</h1>
+                  <h1 className='font-semibold text-lg text-black font-mont'>{d.name}</h1>
                   <p className='text-gray-900'> {d.description}</p>
                 </div>
                 <div className='flex flex-row flex-wrap rounded-full'>

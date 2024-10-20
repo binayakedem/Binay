@@ -37,11 +37,11 @@ useEffect(() => {
       />
       <div className="relative z-10 flex items-center  h-full bg-black bg-opacity-40">
         <div className='mx-4 md:mx-12 lg:mx-24 lg:py-4 '>
-        <h1 className="text-white text-4xl md:text-6xl font-bold">Hi, Im <span className='text-warm-orange font-sarif'>  {roles[currentRole]}</span></h1>
-        <h1 className="text-white text-4xl md:text-6xl font-bold"> Developer</h1>
+        <h1 className="text-white text-4xl md:text-6xl font-bold font-mont">Hi, Im <span className='text-warm-orange font-sarif'>  {roles[currentRole]}</span></h1>
+        <h1 className="text-white text-4xl md:text-6xl font-bold font-mont"> Developer</h1>
         <button
         onClick={handleDownload}
-        className="px-4 py-2 bg-[#F39C12] lg:mt-28 mt-16 text-white rounded hover:bg-[#0849FF] transition duration-300"
+        className="px-4 py-2 bg-blue-600 lg:mt-28 mt-16 text-white rounded hover:bg-[#0849FF] transition duration-300"
       >
         Download CV
       </button>

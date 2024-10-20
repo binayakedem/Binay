@@ -21,7 +21,7 @@ const MyBlog = () => {
   };
   return (
     <div className='bg-dark-50 text-gray-900 lg:px-32 md:px-20 px-2'>
-        <h1 className="text-lg font-bold text-black text-center">Personal Experience Blog</h1>
+        <h1 className="text-lg font-bold text-black text-center font-mont">Personal Experience Blog</h1>
        {blogPosts.map((post, index) => (
         <div
           key={index}
@@ -51,11 +51,11 @@ const MyBlog = () => {
      data-aos-easing="linear"
      data-aos-duration="1500">
                 
-                <h1 className="font-semibold text-lg my-2 text-black">Introduction</h1>
+                <h1 className="font-semibold text-lg my-2 text-black font-mont">Introduction</h1>
                 <p data-aos="zoom-up" data-aos-duration="1000">{post.main_paragraph}</p>
               </div>
               <div>
-                <h1 className="font-semibold text-lg my-2 text-black">Background</h1>
+                <h1 className="font-semibold text-lg my-2 text-black font-mont">Background</h1>
               <p>{post.second_paragraph}</p>
               </div>
               <div className="overflow-hidden h-4/5" data-aos="zoom-in" data-aos-duration="1200">
@@ -64,7 +64,7 @@ const MyBlog = () => {
                 </div>
                   </div>
                   <div>
-            <h1 className="text-xl font-semibold mb-2 text-[#F39C12] text-center">Some Glimpse</h1>
+            <h1 className="text-xl font-semibold mb-2 text-[#F39C12] text-center font-mont">Some Glimpse</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="1500">

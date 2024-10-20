@@ -6,6 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        gradient: {
+          '0%, 100%': { 'background-position': '0% 50%' },
+          '50%': { 'background-position': '100% 50%' },
+        },
+      },
+      animation: {
+        gradient: 'gradient 2s ease infinite',
+      },
       colors: {
         'sky-blue': '#2A9DF4',
         'leaf-green': '#28A745',
@@ -16,6 +25,7 @@ export default {
       fontFamily: {
         'sans': ['Open Sans', 'Arial', 'sans-serif'],
         'serif': ['Playfair Display', 'Georgia', 'serif'],
+        'mont':['Montserrat'],//heading
       },
       active: {
         color: 'text-warm-orange',

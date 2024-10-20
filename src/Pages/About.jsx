@@ -27,11 +27,11 @@ const About = () => {
             </div>
             <div className='p-6 my-2 ' data-aos="fade-up" data-aos-duration="2000">
                 <div>
-                <h1 className='text-black font-bold text-2xl my-6'>About Me</h1>
+                <h1 className='text-black font-bold text-2xl my-6 font-mont'>About Me</h1>
                 <p className='text-gray-800 font-mono '>Hello! I'm an enthusiastic IT student who enjoys coding and continuous learning. My enthusiasm for technology motivates me to constantly adapt to new tools and frameworks. I thrive on solving complex problems and developing efficient, innovative solutions. With a strong interest in software development, I am committed to learning both frontend and backend technologies. Throughout my studies, I have completed over 20 projects that demonstrate my ability to apply theoretical knowledge to real-world scenarios. My journey is driven by curiosity and a desire to excel, with the goal of making a significant contribution to the tech industry. Let's connect and create something incredible together!</p>
                 </div>
                 <div className='flex flex-col gap-3'>
-                    <h1 className='text-black font-bold text-2xl my-6'>Education</h1>
+                    <h1 className='text-black font-bold text-2xl my-6 font-mont'>Education</h1>
                     <div className='flex flex-row gap-2 items-center'>
                     <FaUniversity color='black'/> <p className='text-gray-900'>Orchid International College,</p > <p className='text-warm-orange font-bold text-lg font-mono'>BSc.CSIT</p>
 
@@ -61,7 +61,7 @@ const About = () => {
         referrerPolicy="no-referrer-when-downgrade"
       />
       <div className='text-black flex flex-col gap-2    '>
-        <h1 className='font-bold text-lg text-yellow-600'>Contacts</h1>
+        <h1 className='font-bold text-lg text-yellow-600 font-mont'>Contacts</h1>
         <div className='flex flex-row gap-2 items-center'>
                 <FaPhone color='green'/>
                 <p>+977-9843555471</p>

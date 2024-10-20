@@ -133,7 +133,7 @@ const Gallary = () => {
   return (
     <>
       <div className="bg-gray-50 text-light-gray lg:px-32 md:px-20 px-2">
-        <h1 className="font-bold text-black text-2xl text-center py-10">Gallery</h1>
+        <h1 className="font-bold text-black text-2xl text-center py-10 font-mont">Gallery</h1>
         <div className='md:pb-8 pb-2'>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {images.slice(0, visibleImages).map((image) => (
