@@ -56,7 +56,7 @@ import c9 from '../assets/c9.png'
 import  c10 from '../assets/c10.png'
 const Gallary = () => {
   const [selectedImage, setSelectedImage] = useState(null);
-  const [visibleImages, setVisibleImages] = useState(6); // State to manage visible images
+  const [visibleImages, setVisibleImages] = useState(3); // State to manage visible images
 
   // Array of imported images with unique IDs
   const images = [
