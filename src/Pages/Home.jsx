@@ -4,6 +4,7 @@ import Projects from '../Components/Projects'
 import Body from '../Components/Body'
 import Gallary from '../Components/Gallary'
 import Blognavigator from '../Components/Blognavigator'
+import Contact from '../Components/Contact'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Gallary/>
         <Blognavigator/>
         <Skills/>
+        <Contact/>
     </div>
   )
 }
