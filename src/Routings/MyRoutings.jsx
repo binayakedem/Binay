@@ -15,20 +15,21 @@ const MyRoutings= () => {
   return (
    <>
    <BrowserRouter>
-   <SecondaryNav/>
-   <Navbar/>
-   <Routes>
-    <Route path='/' element={<Home/>}/>
-    <Route path='/skills' element={<SkillPage/>}/>
-    <Route path='/projects' element={<ProjectPage/>}/>
-    <Route path='/experiences' element={<Experiences/>}/>
-    <Route path='/about' element={<About/>}/>
-    <Route path='/blog' element={<Blog />}/>
-    <Route path='/gallery' element={<Gallery />}/>
-    <Route path='/contact' element={<Contact />}/>
-   </Routes>
-   <Footer/>
-   </BrowserRouter>
+        <SecondaryNav />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/skills" element={<SkillPage />} />
+          <Route path="/projects" element={<ProjectPage />} />
+          <Route path="/experiences" element={<Experiences />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>   
+
+        <Footer />
+      </BrowserRouter>
    </>
   )
 }
