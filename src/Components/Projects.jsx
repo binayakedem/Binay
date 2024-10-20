@@ -152,7 +152,7 @@ const Projects = () => {
           displayedProjects.map((d) => (
             <div data-aos="zoom-in-up" data-aos-duration="1500" key={d.id} className='flex flex-col rounded-xl border border-black p-4 shadow-lg bg-gray-200 '>
               <div className='flex flex-col gap-4'>
-                <div className='overflow-hidden h-96'>
+                <div className='overflow-hidden h-52 md:h-72 lg:h-96'>
                   <a href={d.preview} target='_blank'>
                     <img className='h-full w-full object-cover rounded-xl hover:scale-110 duration-300 cursor-pointer' src={d.image} alt={d.name} />
                   </a>

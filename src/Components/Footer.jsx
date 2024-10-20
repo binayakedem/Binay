@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <div className='text-light-gray bg-dark-slate mt-6'>
        <div className=' lg:px-32 md:px-20 px-2'>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
+        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 '>
           <div className='flex flex-col p-3' >
             <h1 className='text-warm-orange font-bold md:text-2xl text-lg my-1'>Quick Links</h1>
             <div className='flex flex-col lg:gap-1 '>
