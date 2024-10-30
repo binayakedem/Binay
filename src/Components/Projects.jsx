@@ -7,7 +7,7 @@ import subhfront from '../assets/subhfront.png'
 import subhdashboard from '../assets/subhdash.png'
 import hashcnet from '../assets/hashnet.jpg'
 import quote from '../assets/quote.jpg'
-
+import intersect from '../assets/intersect.jpg'
 const Projects = () => {
   const [showMore, setShowMore] = useState(false);
 
@@ -68,6 +68,15 @@ const Projects = () => {
     },
     {
       id: 7,
+      name: "Intersect Pvt.Ltd.",
+      languages: ["React.js", "Tailwind CSS"],
+      image: intersect,
+      description: "This system displays information about Intersect Pvt.Ltd.",
+      sourcecode: "https://github.com/binayakedem/intersect",
+      preview: "https://intersect1.vercel.app/"
+    },
+    {
+      id: 8,
       name: "Hariyali Abhiyan",
       languages: ["React.js", "Tailwind CSS"],
       image: hariyali,

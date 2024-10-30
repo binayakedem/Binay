@@ -43,7 +43,7 @@ const Experiences = () => {
         <img className='h-60 w-full object-cover' src="https://st.depositphotos.com/1350793/2816/i/450/depositphotos_28167733-stock-photo-social-networking-concept.jpg" alt="banner" />
     </div>
     <div className='bg-gray-50 text-light-gray lg:px-32 md:px-20 px-2'>
-        <h1 className='font-bold  text-black text-2xl text-center py-10'>Project done at Softech Foundation Using</h1>
+        <h1 className='font-bold  text-black text-2xl text-center py-10 font-mont'>Project done at Softech Foundation Using</h1>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-2'>
                 {
                     data.map((d)=>(
