@@ -1,5 +1,5 @@
-import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import React,{useEffect,useState} from 'react'
+import { BrowserRouter, Route, Routes ,Navigate} from 'react-router-dom'
 import Home from '../Pages/Home'
 import SkillPage from '../Pages/SkillPage'
 import Navbar from '../Components/Navbar'
@@ -11,7 +11,21 @@ import Footer from '../Components/Footer'
 import Blog from '../Pages/Blog'
 import Gallery from '../Pages/Gallery'
 import Contact from '../Pages/Contact'
+
+import Login from "../Auth/Login";
+
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Profile from "../Auth/Profile"
+
+import { auth } from "../Auth/firebase";
 const MyRoutings= () => {
+  const [user, setUser] = useState();
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      setUser(user);
+    });
+  });
   return (
    <>
    <BrowserRouter>
@@ -26,6 +40,10 @@ const MyRoutings= () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          {/* new one */}
+          <Route path="/bins-admin" element={user ? <Navigate to="/profile" /> : <Login />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/profile" element={<Profile />} />
         </Routes>   
 
         <Footer />
