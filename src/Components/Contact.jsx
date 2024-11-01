@@ -5,11 +5,10 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { toast } from "react-toastify";
 const Contact = () => {
     const [user, setUser] = useState({
-        name: '', email: '', subject: '', message: '',seen:'false'
+        name: '', email: '', subject: '', message: '',seen:false
     });
     const [botReply, setBotReply] = useState('');
     const [loading, setLoading] = useState(false);
-
     let name, value;
     const data = (e) => {
         name = e.target.name;
@@ -28,7 +27,7 @@ const Contact = () => {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                name, email, subject, message,seen
+                name, email, subject, message,seen 
             })
         };
 
