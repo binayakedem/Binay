@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { FaLinkedin, FaFacebook, FaInstagram, FaGithubSquare, FaPhone } from "react-icons/fa";
 import { MdOutlineAttachEmail } from "react-icons/md";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
-import { toast , Toaster} from 'react-hot-toast';
-
+import { toast } from "react-toastify";
 const Contact = () => {
     const [user, setUser] = useState({
         name: '', email: '', subject: '', message: '',seen:'false'
@@ -36,7 +35,9 @@ const Contact = () => {
         const res = await fetch('https://profilemsg-default-rtdb.firebaseio.com/message.json', options);
 
         if (res) {
-            toast.success("Message is sent!!!")
+            toast.success("Message deleted successfully", {
+                position: "top-center",
+            });
             setBotReply(`Hi ${name}, thanks for reaching out! We have received your message and will get back to you shortly.`);
             setUser({ name: '', email: '', subject: '', message: '' });
         } else {
