@@ -118,7 +118,7 @@ const Profile = () => {
                                     <div className="cursor-pointer">{message.seen ? 'Read' : 'Read'}</div>
                                     <div>
                                         {
-                                            message.seen == "true" ?
+                                            message.seen ?
                                                 <div className="flex flex-row"> <p>Seen</p>
                                                     <div className="overflow-hidden h-7 w-7"> <img className="w-full h-full object-cover" src="https://img.freepik.com/premium-psd/eye-png-with-ai-generated-png_1182830-1284.jpg?semt=ais_hybrid" alt="eye" /></div>
                                                 </div> :
