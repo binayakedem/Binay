@@ -114,7 +114,7 @@ const Profile = () => {
                         <div key={message.id}>
                             <div onClick={() => handleToggle(message.id)} className="bg-white text-black p-4 grid grid-cols-3 mt-1">
                                 <div>{message.name}</div>
-                                <div className="grid grid-cols-2 gap-2">
+                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
                                 <div className="cursor-pointer">{message.seen ? 'Read' : 'Read'}</div>
                                 <div>
                                     {
