@@ -63,7 +63,7 @@ const Routine = () => {
             
             <div className='bg-dark-50 text-white lg:px-32 md:px-20 px-2 pt-2 '>
                 <div className='bg-yellow-50 rounded shadow md:p-10 p-2'>
-                    <h1 className='text-black font-bold text-2xl text-center mb-10 font-mont'>Daily Routine</h1>
+                    <h1 className='text-black font-bold text-lg md:text-2xl text-center mb-3 md:mb-10 font-mont'>Daily Routine</h1>
 
                     <div className="habit-list text-sm">
                         {habits.map((habit, index) => (
