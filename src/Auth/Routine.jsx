@@ -61,15 +61,15 @@ const Routine = () => {
                 </div>
             )}
             
-            <div className='bg-dark-50 text-white lg:px-32 md:px-20 px-2 pt-2'>
-                <div className='bg-yellow-50 rounded shadow md:p-10 p-4'>
+            <div className='bg-dark-50 text-white lg:px-32 md:px-20 px-2 pt-2 '>
+                <div className='bg-yellow-50 rounded shadow md:p-10 p-2'>
                     <h1 className='text-black font-bold text-2xl text-center mb-10 font-mont'>Daily Routine</h1>
 
-                    <div className="habit-list">
+                    <div className="habit-list text-sm">
                         {habits.map((habit, index) => (
-                            <div key={index} className="habit-item flex justify-between items-center mb-4 p-4 bg-white rounded shadow">
-                                <span className="text-black font-semibold">{habit}</span>
-                                <div className="buttons flex gap-3">
+                            <div key={index} className="habit-item flex justify-between items-center mb-2 p-2 bg-white rounded shadow">
+                                <span className="text-black font-semibold text-sm">{habit}</span>
+                                <div className="buttons flex gap-2">
                                     <button onClick={() => updateHabitStatus(habit, 'Bad')} className="bg-red-600 text-white rounded px-3 py-1">Bad</button>
                                     <button onClick={() => updateHabitStatus(habit, 'Equi')} className="bg-yellow-600 text-white rounded px-3 py-1">Equi</button>
                                     <button onClick={() => updateHabitStatus(habit, 'Best')} className="bg-green-600 text-white rounded px-3 py-1">Best</button>
