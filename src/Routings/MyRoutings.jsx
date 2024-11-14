@@ -19,6 +19,8 @@ import "react-toastify/dist/ReactToastify.css";
 import Profile from "../Auth/Profile"
 
 import { auth } from "../Auth/firebase";
+import Progress from '../Auth/Progress'
+import Routine from '../Auth/Routine'
 const MyRoutings= () => {
   const [user, setUser] = useState();
   useEffect(() => {
@@ -44,6 +46,7 @@ const MyRoutings= () => {
           <Route path="/bins-admin" element={user ? <Navigate to="/profile" /> : <Login />} />
               <Route path="/login" element={<Login />} />
               <Route path="/profile" element={<Profile />} />
+
         </Routes>   
 
         <Footer />
