@@ -6,20 +6,23 @@ const Routine = () => {
     const habits = [
         "Wake Up at 5:45 am", 
         "Morning walk Daily", 
+        "Worship",
         "Plan Your Day in the Morning", 
-        "Read at least 2 hours",  
+        "Read at least 30 mins gen",  
+        "Listen at least 3 and read 2 aca",
+        "Practice english speaking at day",
+        "Coding at least 2 hours", 
         "Learn Something New", 
         "Sleep for 7-8 hours", 
+        "Whatever talk think the result of what you talk",
+        "Limit  negative impact", 
+        "Remove bad word", 
+        "Spend Time with Family and Friend 2 hours", 
         "Eat Healthy Meals", 
         "Drink 5 Glasses of Water",  
         "Use less than 2 hours of social media", 
         "Take Regular Breaks", 
         "Avoid Procrastination", 
-        "Coding at least 2 hours", 
-        "Spend Time with Family and Friend", 
-        "Remove bad word", 
-        "Limit  negative impact", 
-        "Whatever talk think the result of what you talk"
     ];
 
     const [loading, setLoading] = useState(false);
