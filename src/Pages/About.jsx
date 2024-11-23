@@ -15,11 +15,11 @@ const About = () => {
     };
   return (
     <>
-     <div className='h-60  w-full' data-aos="flip-left"
+     <div className='h-60  w-full' data-aos="zoom-in"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
         <img className='h-60 w-full object-cover' src={banner} alt="banner" />
-        <h1 className='font-bold text-2xl'>About Section</h1>
+
     </div>
     <div className='bg-dark-50 text-light-gray lg:px-32 md:px-20 px-2'>
         <div className='grid col-span-1 md:grid-cols-2 gap-5'>

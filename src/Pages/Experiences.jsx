@@ -37,7 +37,7 @@ const Experiences = () => {
       ]
   return (
     <>
-    <div className='h-60 overflow-hidden w-full' data-aos="flip-left"
+    <div className='h-60 overflow-hidden w-full' data-aos="zoom-in"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
         <img className='h-60 w-full object-cover' src="https://st.depositphotos.com/1350793/2816/i/450/depositphotos_28167733-stock-photo-social-networking-concept.jpg" alt="banner" />

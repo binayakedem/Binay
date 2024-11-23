@@ -63,7 +63,7 @@ const Blog = () => {
   };
   return (
     <>
-    <div className='overflow-hidden h-80  w-full' data-aos="flip-left"
+    <div className='overflow-hidden h-80  w-full' data-aos="zoom-in"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
         <img className='h-80 w-full object-cover' src="https://mijablur.com/wp-content/uploads/20211222_192434_0000.jpg" alt="blogginbanner" />
