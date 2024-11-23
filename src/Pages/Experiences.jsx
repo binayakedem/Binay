@@ -47,7 +47,7 @@ const Experiences = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-2'>
                 {
                     data.map((d)=>(
-                        <div key={d.id} data-aos="fade-up"
+                        <div key={d.id} data-aos="zoom-in"
                         data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
                             <div className=' border rounded-md ease-in-out cursor-pointer h-40 overflow-hidden'>
                                 <img className='rounded-lg object-cover h-full w-full hover:scale-110 duration-500 ease-in-out' src={d.image} alt="logo" />
