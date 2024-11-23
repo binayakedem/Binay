@@ -28,7 +28,7 @@ const Projects = () => {
       image: hashcnet,
       description: "This system displays information about Hash Cnet Pvt. Ltd.",
       sourcecode: "https://github.com/binayakedem/",
-      preview: "https://hashcnet.vercel.app/"
+      preview: "https://hashcnet.com.np/"
     },
     {
       id: 3,
