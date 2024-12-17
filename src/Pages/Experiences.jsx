@@ -1,39 +1,57 @@
 import React from 'react'
 const Experiences = () => {
     const data=[
-        {
-          "id": 1,
-          "image": "https://picperf.io/https://laravelnews.s3.amazonaws.com/images/tailwindcss.png",
-        },
-        {
-          "id": 2,
-          "image": "https://miro.medium.com/v2/resize:fit:960/0*acB7EdIeWDFW0caX.jpg"
-        },
-        {
-          "id": 3,
-          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReof1h0J36RGurfOZFfF42rtDMDX9t0d9TbjyFcS0smTO5alQAh24VMayJrNa7UeK4OFg&usqp=CAU",
-        },
+      {
+        "id": 1,
+        "image": "https://logolook.net/wp-content/uploads/2022/11/Java-Logo.png",
+      },
+      {
+        "id": 2,
+        "image": "https://contentstatic.techgig.com/thumb/msid-101591195,width-800,resizemode-4/Why-is-python-one-of-the-best-programming-languages.jpg?9070"
+
+      },
+      {
+        "id": 3,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReof1h0J36RGurfOZFfF42rtDMDX9t0d9TbjyFcS0smTO5alQAh24VMayJrNa7UeK4OFg&usqp=CAU",
+      },
         {
           "id": 4,
-          "image": "https://www.openlogic.com/sites/default/files/image/2021-06/image-blog-openlogic-what-is-mongodb.png",
-        
+          "image": "https://www.datocms-assets.com/48401/1628644950-javascript.png?auto=format&fit=max&w=1200",
         },
         {
           "id": 5,
-          "image": "https://miro.medium.com/v2/resize:fit:1400/1*i2fRBk3GsYLeUk_Rh7AzHw.png",
+          "image": "https://miro.medium.com/v2/resize:fit:960/0*acB7EdIeWDFW0caX.jpg"
         },
         {
           "id": 6,
-          "image": "https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png"
+          "image": "https://miro.medium.com/v2/resize:fit:1400/1*i2fRBk3GsYLeUk_Rh7AzHw.png",
         },
         {
             "id": 7,
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlJ6A-fY-YxIxZTSqLhiVKy_AI9OdRRyOJjjGq9KPxJ5uTCS3Oqxnm1mO183NEGCIlZns&usqp=CAU"
           },
-        {
+          {
             "id": 8,
-            "image": "https://contentstatic.techgig.com/thumb/msid-101591195,width-800,resizemode-4/Why-is-python-one-of-the-best-programming-languages.jpg?9070"
-          }
+            "image": "https://picperf.io/https://laravelnews.s3.amazonaws.com/images/tailwindcss.png",
+          },
+          {
+            "id": 9,
+            "image": "https://miro.medium.com/v2/resize:fit:1220/0*epnKnkKuLx2RAajt",
+          },
+          {
+            "id": 9,
+            "image": "https://cdn.intuji.com/2023/10/MySQL.png",
+          },
+        {
+          "id": 10,
+          "image": "https://www.openlogic.com/sites/default/files/image/2021-06/image-blog-openlogic-what-is-mongodb.png",
+        
+        },
+        {
+          "id": 11,
+          "image": "https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png"
+        },
+       
       ]
   return (
     <>
@@ -43,7 +61,7 @@ const Experiences = () => {
         <img className='h-60 w-full object-cover' src="https://st.depositphotos.com/1350793/2816/i/450/depositphotos_28167733-stock-photo-social-networking-concept.jpg" alt="banner" />
     </div>
     <div className='bg-gray-50 text-light-gray lg:px-32 md:px-20 px-2'>
-        <h1 className='font-bold  text-black text-2xl text-center py-10 font-mont'>Project done at Softech Foundation Using</h1>
+        <h1 className='font-bold  text-black text-2xl text-center py-10 font-mont'>Projects based on</h1>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-2'>
                 {
                     data.map((d)=>(
