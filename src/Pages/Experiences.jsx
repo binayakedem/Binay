@@ -68,7 +68,9 @@ const Experiences = () => {
                         <div key={d.id} data-aos="zoom-in"
                         data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
                             <div className=' border rounded-md ease-in-out cursor-pointer h-40 overflow-hidden'>
+                              <a href="https://www.javascript.com/" target="_blank">
                                 <img className='rounded-lg object-cover h-full w-full hover:scale-110 duration-500 ease-in-out' src={d.image} alt="logo" />
+                              </a>
                             </div>
                         </div>
                     ))
